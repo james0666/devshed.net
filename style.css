@@ -1,0 +1,460 @@
+/* ==============================
+   DevShed - Main Styles
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111315;
+    color: #e8e8e8;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   Header
+   ============================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: rgba(17, 19, 21, 0.95);
+
+    border-bottom: 1px solid #292d30;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #bfc3c6;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+/* ==============================
+   Hero
+   ============================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 120px 20px 80px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #24292d 0%,
+            #111315 60%
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 15px;
+
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 26px;
+    font-weight: normal;
+
+    color: #bfc3c6;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 35px;
+
+    color: #92979b;
+    font-size: 17px;
+}
+
+
+/* ==============================
+   Buttons
+   ============================== */
+
+.hero-buttons,
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 26px;
+
+    background-color: #d6a84f;
+
+    color: #111315;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e5bd68;
+
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background-color: transparent;
+
+    color: #d6a84f;
+
+    border: 1px solid #d6a84f;
+}
+
+.button-outline:hover {
+    background-color: #d6a84f;
+
+    color: #111315;
+}
+
+
+/* ==============================
+   Sections
+   ============================== */
+
+.section {
+    min-height: 65vh;
+
+    padding: 100px 60px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-alt {
+    max-width: none;
+
+    background-color: #181b1e;
+}
+
+
+/* ==============================
+   Smaller Information Sections
+   ============================== */
+
+#about,
+#links {
+    min-height: 45vh;
+}
+
+
+.section h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+
+    color: #ffffff;
+}
+
+.section-intro {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+    color: #92979b;
+}
+
+
+/* ==============================
+   Asset Cards
+   ============================== */
+
+.asset-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    max-width: 550px;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.asset-card {
+    background-color: #1d2124;
+
+    border: 1px solid #2b3034;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.asset-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d6a84f;
+}
+
+.asset-image {
+    height: 300px;
+
+    background-color: #24282c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==============================
+   Asset Images
+   ============================== */
+
+.asset-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.image-placeholder {
+    color: #666c70;
+
+    font-size: 16px;
+}
+
+.asset-content {
+    padding: 30px;
+}
+
+.asset-content h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+.asset-content p {
+    color: #92979b;
+
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: #d6a84f;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: #e5bd68;
+}
+
+
+/* ==============================
+   Free Assets
+   ============================== */
+
+.coming-soon {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background-color: #1d2124;
+
+    border: 1px solid #2b3034;
+
+    border-radius: 10px;
+}
+
+.coming-soon h3 {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+}
+
+.coming-soon p {
+    color: #92979b;
+}
+
+
+/* ==============================
+   About
+   ============================== */
+
+.about-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+
+    color: #92979b;
+
+    font-size: 17px;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background-color: #0c0e0f;
+
+    border-top: 1px solid #292d30;
+}
+
+.footer-logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #666c70;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Mobile
+   ============================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .section {
+        min-height: auto;
+
+        padding: 80px 20px;
+    }
+
+    #about,
+    #links {
+        min-height: auto;
+    }
+
+    .asset-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+}

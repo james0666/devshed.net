@@ -19,4 +19,4 @@ Moved the Unity Asset Store button into About DevShed.
 Removed the duplicate Asset Store button from the hero, leaving only View Assets there.
 Kept the overall direction deliberately clean, simple, one-page, less-is-more.
 Discussed adding a professional contact option later, but decided to leave that for now.
-Latest changes are still local and haven’t been committed/pushed yet.
+Latest changes are Live!

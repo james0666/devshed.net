@@ -2,80 +2,135 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DevShed | RuralProject</title>
 
-    <link
-        rel="icon"
-        type="image/jpeg"
-        href="images/DevShed-icon.jpg"
-    >
-
-    <link
-        rel="stylesheet"
-        href="ruralproject.css"
-    >
-
+    <link rel="icon" type="image/jpeg" href="images/DevShed-icon.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
     <!-- Header -->
-
     <header>
-
-        <div class="logo">
-            RuralProject
-        </div>
+        <div class="logo">DevShed</div>
 
         <nav>
-
-            <a href="index.html">
-                DevShed
-            </a>
-
+            <a href="index.html">Home</a>
         </nav>
-
     </header>
 
 
     <!-- RuralProject -->
-
     <main>
 
-        <section class="builds">
+        <section class="section" style="padding-top: 140px; padding-bottom: 90px;">
 
-            <h1>
-                Latest Builds
-            </h1>
+            <!-- About -->
+            <h2>About RuralProject</h2>
 
-
-            <div class="build-card">
-
-                <h2>
-                    RuralProject Test Build
-                </h2>
-
+            <div class="about-content">
                 <p>
-                    Latest Playable Build - 11/08/2026
+                    RuralProject is a small-town Australian life sim built around a relaxed pace,
+                    simple jobs and the everyday atmosphere of rural-town life.
                 </p>
 
-                <a
-					href="https://otos.feralhosting.com/thebox/links/rtorrent_data/Games.Music/RuralProject_Playtest_Latest_Build_11.08.26.rar"
-					class="download-button"
-					download
-				>
-					Download Latest Build
-				</a>
+                <p>
+                    The project is still in active development, with new buildings, jobs,
+                    interactions and world details being added over time.
+                </p>
+            </div>
 
+
+            <!-- Main Screenshot -->
+            <div class="asset-grid" style="margin-top: 45px;">
+                <div style="background-color: #1d2124; border: 1px solid #2b3034; border-radius: 10px; overflow: hidden;">
+                    <div class="asset-image rural-screenshot">
+                        <img
+                            src="images/WebsiteScreenShotRuralProject.jpg"
+                            alt="RuralProject - Morgans Hardware and nearby houses"
+                        >
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Current Features -->
+            <div style="margin-top: 85px;">
+                <h2>Current Features</h2>
+
+                <p class="section-intro">
+                    A growing collection of jobs, systems and town interactions already working in the current build.
+                </p>
+
+                <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px 60px;">
+
+                    <ul style="flex: 1 1 360px; color: #92979b; padding-left: 22px;">
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Jobs & Economy</strong> — Lawn mowing, deliveries,
+                            farming work, cash and bank money, plus optional hidden cash-in-hand jobs.
+                        </li>
+
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Property & Progression</strong> — Earn money around
+                            town, buy houses and gradually become more established.
+                        </li>
+
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Living World</strong> — Day and night cycle,
+                            weekdays, business opening hours, town lighting and NPC daily routines.
+                        </li>
+                    </ul>
+
+                    <ul style="flex: 1 1 360px; color: #92979b; padding-left: 22px;">
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Town Interaction</strong> — Shops, ATMs, TVs,
+                            doors, sleep points and other everyday interactive systems.
+                        </li>
+
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Player Systems</strong> — Energy, inventory,
+                            save and load support, banking and property ownership.
+                        </li>
+
+                        <li style="margin-bottom: 18px;">
+                            <strong style="color: #ffffff;">Rural Atmosphere</strong> — Farms, houses, local
+                            businesses, animals, lighting and small environmental details.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Latest Build + Development & Testing -->
+            <div style="margin-top: 85px;">
+                <h2>Latest Playable Build</h2>
+
+                <div class="coming-soon">
+                    <h3 style="margin-bottom: 22px;">RuralProject Test Build</h3>
+
+                    <p style="margin-bottom: 20px;">
+                        <strong style="color: #ffffff;">Build Date:</strong> 10/08/2026
+                    </p>
+
+                    <p style="margin-bottom: 20px;">
+                        RuralProject is still in active development. Features, world layout
+                        and gameplay systems may change between builds.
+                    </p>
+
+                    <p style="margin-bottom: 24px;">
+                        Builds are tested on both the main development PC and older hardware,
+                        with a current lower-end target of <strong style="color: #ffffff;">1080p at around 30 FPS</strong>.
+                    </p>
+
+                    <div class="links" style="margin-top: 8px;">
+                        <a href="YOUR_RAR_DOWNLOAD_LINK" class="button" download>
+                            Download Latest Build
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -84,15 +139,13 @@
 
 
     <!-- Footer -->
-
     <footer>
+        <div class="footer-logo">DevShed</div>
 
         <p>
-            © 2026 DevShed
+            © 2026 DevShed. All rights reserved.
         </p>
-
     </footer>
 
 </body>
-
 </html>

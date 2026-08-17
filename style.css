@@ -43,10 +43,23 @@ header {
     z-index: 1000;
 }
 
-.logo {
+a.logo {
     font-size: 26px;
     font-weight: bold;
     color: #ffffff;
+
+    text-decoration-line: underline;
+    text-decoration-color: #FF3131;
+    text-underline-offset: 4px;
+}
+
+a.logo:visited {
+    color: #ffffff;
+}
+
+a.logo:hover {
+    color: #ffffff;
+    text-decoration-color: #1F51FF;
 }
 
 nav {
@@ -72,7 +85,7 @@ nav a:hover {
    ============================== */
 
 .hero {
-    min-height: 100vh;
+    min-height: 55vh;
 
     display: flex;
     justify-content: center;
@@ -80,7 +93,7 @@ nav a:hover {
 
     text-align: center;
 
-    padding: 120px 20px 80px;
+    padding: 100px 20px 80px;
 
     background:
         radial-gradient(
@@ -177,9 +190,9 @@ nav a:hover {
    ============================== */
 
 .section {
-    min-height: 65vh;
+    min-height: 50vh;
 
-    padding: 100px 60px;
+    padding: 55px 55px;
 
     max-width: 1200px;
 
@@ -196,14 +209,13 @@ nav a:hover {
     background-color: #181b1e;
 }
 
-
 /* ==============================
    Smaller Information Sections
    ============================== */
 
 #about,
 #links {
-    min-height: 45vh;
+    min-height: 35vh;
 }
 
 

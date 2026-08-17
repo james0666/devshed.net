@@ -456,9 +456,13 @@ footer p {
         gap: 15px;
     }
 
-   .logo {
-    margin-top: 15px;
-   }
+    .logo {
+        margin-top: 15px;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
 
     nav {
         gap: 15px;

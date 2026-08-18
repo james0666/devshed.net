@@ -20,3 +20,7 @@ Removed the duplicate Asset Store button from the hero, leaving only View Assets
 Kept the overall direction deliberately clean, simple, one-page, less-is-more.
 Discussed adding a professional contact option later, but decided to leave that for now.
 Latest changes are Live!
+
+18/08/26
+
+Changed download link to mega.io

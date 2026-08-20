@@ -24,3 +24,5 @@ Latest changes are Live!
 18/08/26
 
 Changed download link to mega.io
+
+Added a proper logo at the top
